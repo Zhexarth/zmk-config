@@ -31,28 +31,28 @@
 
         default_layer {
             bindings = <
-&kp LALT        &kp Q  &kp W  &kp E   &kp R  &kp T                            &kp Y        &kp U  &kp I     &kp O      &kp P         &kp RALT
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D   &kp F  &kp G                            &kp H        &kp J  &kp K     &kp L      &kp UP_ARROW  &kp RIGHT_SHIFT
-&kp LCTRL       &kp Z  &kp X  &kp C   &kp V  &kp B     &kp ESCAPE  &code      &kp N        &kp M  &kp LEFT  &kp RIGHT  &kp DOWN      &kp RIGHT_CONTROL
-&kp RGUI        &none  &none  &trans  &mo 1  &kp BSPC  &kp TAB     &kp ENTER  &lt 2 SPACE  &mo 1  &none     &none      &none         &kp RGUI
+&kp ESCAPE    &kp Q           &kp W     &kp E      &kp R  &kp T                   &kp Y      &kp U  &kp I            &kp O            &kp P            &kp LSHIFT
+&kp LCTRL     &kp A           &kp S     &kp D      &kp F  &kp G                   &kp H      &kp J  &kp K            &kp L            &kp ENTER        &kp LCTRL
+&kp LEFT_ALT  &kp Z           &kp X     &kp C      &kp V  &kp B     &none  &code  &kp N      &kp M  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp LALT
+&mo 2         &kp DOWN_ARROW  &kp LEFT  &kp RIGHT  &mo 1  &kp BSPC  &none  &none  &kp SPACE  &mo 1  &kp KP_NUMBER_1  &kp KP_NUMBER_0  &kp PERIOD       &mo 2
+            >;
+        };
+
+        shift_layer {
+            bindings = <
+&kp LEFT_GUI  &kp LS(Q)     &kp LS(W)  &kp LS(E)  &kp LS(R)    &kp LS(T)                &kp LS(Y)  &kp LS(U)  &kp LS(I)        &kp LS(O)        &kp LS(P)        &kp LEFT_GUI
+&kp LCTRL     &kp LS(A)     &kp LS(S)  &kp LS(D)  &kp LS(F)    &kp LS(G)                &kp LS(H)  &kp LS(J)  &kp LS(K)        &kp LS(L)        &kp LS(ENTER)    &kp LCTRL
+&kp LALT      &kp LS(Z)     &kp LS(X)  &kp LS(C)  &kp LS(V)    &kp LS(B)  &none  &none  &kp LS(N)  &kp LS(M)  &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUMBER_6  &kp LALT
+&none         &kp UP_ARROW  &kp HOME   &kp END    &kp LS(TAB)  &kp DEL    &none  &none  &kp SPACE  &kp TAB    &kp KP_NUMBER_9  &kp KP_NUMBER_5  &kp MINUS        &none
             >;
         };
 
         symbol_layer {
             bindings = <
-&kp AT_SIGN    &kp CARET       &kp EXCLAMATION  &kp QUESTION   &kp SQT               &kp GRAVE                                    &kp EQUAL       &kp DOUBLE_QUOTES  &kp ASTERISK  &kp SLASH  &kp PERCENT    &kp PIPE
-&kp DOLLAR     &kp TILDE       &kp COLON        &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                        &kp LESS_THAN   &kp GREATER_THAN   &kp PLUS      &kp MINUS  &kp PG_UP      &kp NON_US_BACKSLASH
-&kp AMPERSAND  &kp UNDERSCORE  &kp PERIOD       &kp COMMA      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none        &trans   &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp HOME      &kp END    &kp PAGE_DOWN  &kp HASH
-&none          &none           &none            &none          &none                 &trans                 &kp LS(TAB)  &kp DEL  &kp DEL         &none              &none         &none      &none          &none
-            >;
-        };
-
-        Number {
-            bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
-&trans   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&kp F1  &kp CARET       &kp EXCLAMATION  &kp QUESTION   &kp SQT               &kp GRAVE                            &kp NON_US_BACKSLASH  &kp DOUBLE_QUOTES  &kp ASTERISK   &kp SLASH   &kp PERCENT  &kp F12
+&kp F2  &kp TILDE       &kp COLON        &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                &kp LESS_THAN         &kp GREATER_THAN   &kp PLUS       &kp MINUS   &kp EQUAL    &kp F11
+&kp F3  &kp UNDERSCORE  &kp PERIOD       &kp COMMA      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &none  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp AMPERSAND  &kp PIPE    &kp HASH     &kp F10
+&kp F4  &kp F5          &kp F6           &kp F7         &kp LEFT_ALT          &kp LCTRL              &none  &none  &kp LCTRL             &kp LEFT_ALT       &kp AT_SIGN    &kp DOLLAR  &kp F8       &kp F9
             >;
         };
     };
